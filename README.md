@@ -7,3 +7,8 @@ Libraries used:
 - JAX (numPy like)
 - LlamaIndex
 - MLFlow
+
+## Projects
+| Name | Description |
+| --- | --- |
+| document-asssistant | question-answering assistant based on PDF documents |
