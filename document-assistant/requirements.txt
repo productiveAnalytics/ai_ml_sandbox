@@ -1,0 +1,12 @@
+transformers
+huggingface_hub[hf_xet]
+sentence-transformers
+sentencepiece
+chromadb
+langchain-community
+langchain-huggingface
+pymupdf
+pdfplumber
+torch
+streamlit
+pytest
