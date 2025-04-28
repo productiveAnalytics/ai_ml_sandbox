@@ -4,7 +4,7 @@ import streamlit as st
 
 from chatbot import *
 
-st.title("🌐 Gemini 2.0 Flash-Lite Translator")
+st.title(f"🌐 Translator using {MODEL_NAME}")
 
 target_language = st.sidebar.selectbox(
     'User language',
@@ -27,4 +27,4 @@ if st.button("Translate") and text_to_translate and target_language:
     except Exception as e:
         st.error(f"Translation failed: {e}")
 
-st.caption("Powered by Steamlit and Google Gemini 2.0 Flash-Lite")
+st.caption(f"Powered by Steamlit and {MODEL_NAME}")
