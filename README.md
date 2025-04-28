@@ -12,3 +12,4 @@ Libraries used:
 | Name | Description |
 | --- | --- |
 | document-asssistant | question-answering assistant based on PDF documents |
+| simple-chatbot | Language transalator (including Streamlit UI) |
