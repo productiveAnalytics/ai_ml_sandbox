@@ -18,12 +18,16 @@ from conf import *
 
 
 # Build retrieval + QA chain using ChromaDB
-def build_QandA_chain(docs, persist_directory="chroma_store"):
+def build_QandA_chain(docs, persist_directory: str ="chroma_store"):
     # Embeddings model
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 
     # Persistent vector store
-    vectorstore = Chroma.from_documents(documents=docs, embedding=embeddings, persist_directory=persist_directory)
+    vectorstore = Chroma.from_documents(
+        documents=docs, 
+        embedding=embeddings, 
+        persist_directory=persist_directory
+    )
     # vectorstore.persist()  # Save the vectors
 
     # Use a pipeline as a high-level helper
